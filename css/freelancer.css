@@ -41,6 +41,11 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: Azalea;
+  src: url(/fonts/Azalea.otf) format('opentype');
+}
+
 *,
 *::before,
 *::after {
@@ -6916,7 +6921,11 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  /*background-color: #1abc9c !important;*/
+  background-image: url(../img/portfolio/IMG_4361.jpg);
+  background-size:cover;
+  background-position: 50% 10%;
+  box-shadow: inset 0px -23px 81px -4px rgba(0, 0, 0, 0.53);
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6926,7 +6935,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #0f1328 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -10566,6 +10575,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .page-section .page-section-heading {
+  font-family: Azalea;
   font-size: 2.25rem;
   line-height: 2rem;
 }
@@ -10690,6 +10700,7 @@ a.text-dark:hover, a.text-dark:focus {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  background: #ba4c63;
 }
 
 @media (min-width: 992px) {
@@ -10739,7 +10750,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 30em;
+  height: auto;
+  max-width: 700px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 @media (min-width: 992px) {
